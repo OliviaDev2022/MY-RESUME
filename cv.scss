@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Playfair+Display:wght@400;700&display=swap');
+
+//mobile first 320x568
+
+$mobile: 428px;
+$tablet: 540px;
+$tablet-md: 768px;
+$tablet-xl: 1024px;
+$desktop: 1200px;
+$color: #ff0d018e;
+$header-color: #f6dfdf;
+
+body, html {
+ font-family: 'Playfair Display', serif;
+ font-weight: 400;
+ font-size: 14px;
+ //line-height: 1.5;
+ width: 100vw;
+ height: 100vh;
+}
+
+header {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ justify-content: center;
+ background-color: $header-color;
+}
+
+img {
+ width: 85%;
+ border-radius: 50%;
+ margin-top: 10px;
+}
+
+h1 {
+ font-size: 1.3rem;
+ font-weight: 700;
+ margin-top: 16px;
+ text-align: left;
+}
+
+h2 {
+ font-size: 0.9rem;
+ text-align: left;
+}
+
+a{
+ text-decoration: none;
+ color: $color;
+
+  a:hover {
+ text-decoration: underline;
+ }
+}
+
+.icons {
+ font-family: 'Noto Sans', sans-serif;
+ text-align: left;
+ font-size: 7.5px;
+ margin-left: -4%;
+
+  svg {
+   max-width: 10%;
+  }
+}
+
+
+
