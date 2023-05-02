@@ -1,21 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300&family=Playfair+Display:wght@400;700&display=swap');
 
-//mobile first 320x568
+//mobile first 
 
-$mobile: 428px;
+$mobile: 428px ; 
 $tablet: 540px;
 $tablet-md: 768px;
 $tablet-xl: 1024px;
 $desktop: 1200px;
-$color: #ff0d018e;
-$header-color: #f6dfdf;
+$color: #8b0902;
+$header-color: #f1f1f1;
 
 body, html {
  font-family: 'Playfair Display', serif;
  font-weight: 400;
  font-size: 14px;
- //line-height: 1.5;
  width: 100vw;
  height: 100vh;
 }
@@ -28,16 +27,17 @@ header {
  background-color: $header-color;
 }
 
-img {
- width: 85%;
+.profil img {
+ width: 70%;
  border-radius: 50%;
- margin-top: 10px;
+ margin-top: 15px;
+ margin-left: 20%;
 }
 
 h1 {
- font-size: 1.3rem;
+ font-size: 1.1rem;
  font-weight: 700;
- margin-top: 16px;
+ margin-top: 22px;
  text-align: left;
 }
 
@@ -46,7 +46,7 @@ h2 {
  text-align: left;
 }
 
-a{
+a {
  text-decoration: none;
  color: $color;
 
@@ -58,13 +58,161 @@ a{
 .icons {
  font-family: 'Noto Sans', sans-serif;
  text-align: left;
- font-size: 7.5px;
- margin-left: -4%;
+ font-size: 0.5rem;
+ margin-left: -5%;
 
   svg {
-   max-width: 10%;
+   width: 8%;
+  }
+ }
+
+.a-propos p {
+ font-size: 0.6rem;
+ text-align: justify;
+ padding-top: 6px;
+ margin: 8px;
+}
+
+h3 {
+ color: $color;
+ font-size: 0.9rem;
+ font-weight: 700;
+ text-align: left;
+ padding-top: 0px;
+ margin-top: 4%;
+}
+
+hr {
+ border: 1px solid $color;
+ margin: 0%;
+}
+
+h4 {
+ font-size: 0.8rem;
+ text-align: left;
+ font-weight: 700;
+ margin-left: -1px;
+ padding-top: 5px;
+  
+ span {
+  font-style: italic;
+  font-size: 0.6rem;
+ }
+}
+
+.skills {
+ .container {
+  display: inline;  
+  flex-direction: row;  
+  justify-content: space-between;
+ }
+
+ img {
+  width: 13%;
+  border-radius: 50%;
+ }
+}
+ 
+.projects, .formations {
+ p {
+  font-size: 8px;
+  text-align: justify;
+  margin-left: -10px;
+  margin-bottom: 1px;
+ }
+
+ a {
+  font-size: 8px;
+  text-decoration: underline; 
+  margin-left: -10px;
+ }
+}
+
+@media (min-width: $mobile) {
+
+ .skills {
+  img {
+   width: 10%;
+  } 
+ }
+
+ .a-propos p {
+  font-size: 0.8rem;
+ }
+
+ .profil img {
+  width: 45%;
+  margin-left: 35%;
+ }
+
+ .icons {
+  margin-left: -3%;  
+  font-size: 0.6rem;
+ }
+}
+
+@media (min-width: $tablet) {
+
+ .skills {
+  img {
+   width: 8%;
+  } 
+ }
+
+ .profil img {
+  width: 40%;
+  margin-left: 40%;
+ }
+
+ .icons {
+  margin-left: -3%;  
+  font-size: 0.6rem;
+ }
+
+  svg {
+   max-width: 5%;
   }
 }
 
 
+@media (min-width: $tablet-md) {
 
+ .skills {
+  img {
+   width: 7%;
+  } 
+ }
+
+ .profil img {
+  width: 40%;
+  margin-top: 35px;
+  margin-left: -75%;
+ }
+
+ .icons {
+  display: inline;
+  margin-left: 40%;  
+  font-size: 0.8rem;
+  text-align: center;
+ }
+
+  svg {
+
+   max-width: 5%;
+  }
+
+  h1, h2 {
+   text-align: center;   
+   padding-left:50%;
+  }
+  
+  h1 {
+   font-size: 1.3rem;
+   margin-top: 145px;
+  }
+
+  h2 {
+   font-size: 1rem;
+   margin-top: 15px;
+  }
+}
