@@ -8,8 +8,9 @@ $tablet: 540px;
 $tablet-md: 768px;
 $tablet-xl: 1024px;
 $desktop: 1200px;
-$color: #8b0902;
-$header-color: #f1f1f1;
+$links-color: #890903;
+$header-color: #e2edf5;
+$titles-color: rgb(196, 128, 1);
 
 body, html {
  font-family: 'Playfair Display', serif;
@@ -28,62 +29,57 @@ header {
 }
 
 .profil img {
- width: 70%;
+ width: 20%;
  border-radius: 50%;
  margin-top: 15px;
- margin-left: 20%;
 }
 
 h1 {
  font-size: 1.1rem;
  font-weight: 700;
- margin-top: 22px;
- text-align: left;
+ margin-top: 10px;
+ text-align: center;
 }
 
 h2 {
- font-size: 0.9rem;
- text-align: left;
+ font-size: 0.8rem;
+ text-align: center;
 }
 
 a {
  text-decoration: none;
- color: $color;
-
-  a:hover {
- text-decoration: underline;
- }
+ color: $links-color;
 }
 
 .icons {
  font-family: 'Noto Sans', sans-serif;
- text-align: left;
- font-size: 0.5rem;
- margin-left: -5%;
+ font-size: 0.6rem;
+ display: inline; 
+ justify-content:space-evenly;
+ margin-bottom: 5px;
 
   svg {
-   width: 8%;
+   max-width: 5%;
   }
- }
+}
 
 .a-propos p {
  font-size: 0.6rem;
- text-align: justify;
- padding-top: 6px;
- margin: 8px;
+ padding-top: 5px;
+ margin: 5px;
 }
 
 h3 {
- color: $color;
+ color: $titles-color;
  font-size: 0.9rem;
  font-weight: 700;
  text-align: left;
  padding-top: 0px;
- margin-top: 4%;
+ margin-top: 2%;
 }
 
 hr {
- border: 1px solid $color;
+ border: 1px solid $titles-color;
  margin: 0%;
 }
 
@@ -109,7 +105,6 @@ h4 {
 
  img {
   width: 13%;
-  border-radius: 50%;
  }
 }
  
@@ -140,79 +135,65 @@ h4 {
   font-size: 0.8rem;
  }
 
- .profil img {
-  width: 45%;
-  margin-left: 35%;
- }
-
  .icons {
-  margin-left: -3%;  
   font-size: 0.6rem;
  }
 }
 
 @media (min-width: $tablet) {
 
- .skills {
-  img {
+ .skills img {
    width: 8%;
   } 
- }
 
- .profil img {
-  width: 40%;
-  margin-left: 40%;
- }
-
- .icons {
-  margin-left: -3%;  
-  font-size: 0.6rem;
- }
-
-  svg {
-   max-width: 5%;
+ .projects, .formations {
+  p,a {
+    font-size: 0.8rem;
   }
+ }
 }
-
 
 @media (min-width: $tablet-md) {
 
  .skills {
-  img {
-   width: 7%;
-  } 
- }
-
- .profil img {
-  width: 40%;
-  margin-top: 35px;
-  margin-left: -75%;
- }
+   img {
+    max-width: 6%;
+   } 
+  }
 
  .icons {
-  display: inline;
-  margin-left: 40%;  
   font-size: 0.8rem;
-  text-align: center;
- }
-
-  svg {
-
-   max-width: 5%;
+  margin-top: 15px;
+   svg {
+    max-width: 5%;
+   }
   }
 
-  h1, h2 {
-   text-align: center;   
-   padding-left:50%;
-  }
-  
   h1 {
    font-size: 1.3rem;
-   margin-top: 145px;
+   margin-top: 15px;
   }
 
   h2 {
    font-size: 1rem;
    margin-top: 15px;
+  }
+
+  .profil img {
+    width: 15%;
+  }
+
+  .a-propos, .projects, .formations {
+    p, a {
+      font-size: 1rem;
+    }
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  h4 {
+    font-size: 1rem;
   }
 }
